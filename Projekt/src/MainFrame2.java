@@ -499,7 +499,7 @@ public class MainFrame2 extends JFrame{
         }
     }
 
-
+/*
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             MainFrame2 frame2 = new MainFrame2();
@@ -507,6 +507,8 @@ public class MainFrame2 extends JFrame{
         });
     }
 
+
+ */
 
 
 }
