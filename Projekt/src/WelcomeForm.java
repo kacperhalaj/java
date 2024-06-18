@@ -7,7 +7,7 @@ public class WelcomeForm extends JFrame {
     private int width = 460, height = 340;
 
     public WelcomeForm(){
-        super("Laboratorium 2");
+        super("Logowanie");
         this.setContentPane(this.PanelWelcome);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(width,height);
