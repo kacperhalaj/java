@@ -41,28 +41,6 @@ public class LoginFrame extends JFrame {
         //BackgroundPanel backgroundPanel = new BackgroundPanel("1.jpg");
 
 
-/*
-        setLayout(new BorderLayout());
-        JPanel inputPanel = new JPanel(new GridLayout(2, 2,10,10));
-        inputPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        loginField = new JTextField();
-        passwordField = new JPasswordField();
-        inputPanel.add(new JLabel("Login:"));
-        inputPanel.add(loginField);
-        inputPanel.add(new JLabel("Hasło:"));
-        inputPanel.add(passwordField);
-
-        JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.CENTER,10,10));
-        buttonPanel.setBorder(BorderFactory.createEmptyBorder(0, 10, 10, 10));
-        loginButton = new JButton("Zaloguj się");
-        exitButton = new JButton("Wyjdź");
-        buttonPanel.add(loginButton);
-        buttonPanel.add(exitButton);
-
-        add(inputPanel, BorderLayout.CENTER);
-        add(buttonPanel, BorderLayout.SOUTH);
-*/
-
 
         loginField.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {

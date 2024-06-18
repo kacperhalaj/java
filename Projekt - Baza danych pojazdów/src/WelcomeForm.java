@@ -30,7 +30,7 @@ public class WelcomeForm extends JFrame {
             counter+=5;
         }
         dispose();
-        //otworzenei kolejnego form
+
         LoginFrame loginFrame = new LoginFrame();
         loginFrame.setVisible(true);
     }

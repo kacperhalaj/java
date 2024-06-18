@@ -68,35 +68,6 @@ public class MainFrame2 extends JFrame{
 
 
 
-        //JScrollPane scrollPane = new JScrollPane(table);
-
-        /*
-        //JButton refreshButton = new JButton("Odśwież");
-        refreshButton.setBackground(new Color(100, 149, 237));
-        refreshButton.setForeground(Color.WHITE);
-        refreshButton.addActionListener(e -> loadPojazdy());
-
-        //JButton addButton = new JButton("Dodaj Pojazd");
-        addButton.setBackground(new Color(60, 179, 113));
-        addButton.setForeground(Color.WHITE);
-        addButton.addActionListener(e -> showAddPojazdDialog());
-
-        //JButton deleteButton = new JButton("Usuń Pojazd");
-        deleteButton.setBackground(new Color(220, 20, 60));
-        deleteButton.setForeground(Color.WHITE);
-        deleteButton.addActionListener(e -> deletePojazd());
-
-        //JButton detailsButton = new JButton("Szczegóły");
-        detailsButton.setBackground(new Color(255, 165, 0));
-        detailsButton.setForeground(Color.WHITE);
-        detailsButton.addActionListener(e -> showPojazdDetails());
-
-        //JButton exitButton = new JButton("Wyjdź");
-        exitButton.setBackground(new Color(169, 169, 169));
-        exitButton.setForeground(Color.WHITE);
-        exitButton.addActionListener(e -> dispose());
-*/
-
 
         JPanel buttonPanel = new JPanel(new GridBagLayout());
 
@@ -282,7 +253,7 @@ public class MainFrame2 extends JFrame{
 
                     if (newMarka.isEmpty() || newModel.isEmpty() || newRokString.isEmpty() || newSpecyficznyString.isEmpty()) {
                         showMessageDialog(this, "Wszystkie pola muszą być uzupełnione.", "Błąd", JOptionPane.ERROR_MESSAGE);
-                        continue; // Kontynuuj pętlę, aby użytkownik mógł ponownie wprowadzić informacje
+                        continue;
                     }
 
                     try {
@@ -301,13 +272,13 @@ public class MainFrame2 extends JFrame{
                         }
 
                         loadPojazdy();
-                        break; // Wyjdź z pętli, jeśli aktualizacja pojazdu powiodła się
+                        break;
                     } catch (NumberFormatException e) {
                         showMessageDialog(this, "Nieprawidłowy format roku produkcji lub specyfikacji.", "Błąd", JOptionPane.ERROR_MESSAGE);
-                        continue; // Kontynuuj pętlę, aby użytkownik mógł ponownie wprowadzić informacje
+                        continue;
                     }
                 } else {
-                    break; // Wyjdź z pętli, jeśli użytkownik kliknął Anuluj
+                    break;
                 }
 
             }
@@ -370,7 +341,7 @@ public class MainFrame2 extends JFrame{
 
                 if (marka.isEmpty() || model.isEmpty() || rokString.isEmpty() || typ.isEmpty() || specyficznyString.isEmpty()) {
                     showMessageDialog(this, "Wszystkie pola muszą być uzupełnione.", "Błąd", JOptionPane.ERROR_MESSAGE);
-                    continue; // Kontynuuj pętlę, aby użytkownik mógł ponownie wprowadzić informacje
+                    continue;
                 }
 
                 try {
@@ -391,13 +362,13 @@ public class MainFrame2 extends JFrame{
                     }
 
                     loadPojazdy();
-                    break; // Wyjdź z pętli, jeśli dodawanie pojazdu powiodło się
+                    break;
                 } catch (NumberFormatException e) {
                     showMessageDialog(this, "Nieprawidłowy format roku produkcji lub specyfikacji.", "Błąd", JOptionPane.ERROR_MESSAGE);
-                    continue; // Kontynuuj pętlę, aby użytkownik mógł ponownie wprowadzić informacje
+                    continue;
                 }
             } else {
-                break; // Wyjdź z pętli, jeśli użytkownik kliknął Anuluj
+                break;
             }
         }
     }
@@ -479,9 +450,9 @@ public class MainFrame2 extends JFrame{
 
 
             if (!isSelected) {
-                if (row % 2 == 0) { // Parzyste wiersze
+                if (row % 2 == 0) {
                     c.setBackground(Color.decode("#8FBC8F"));
-                } else { // Nieparzyste wiersze
+                } else {
                     c.setBackground(new Color(240, 240, 240));
                 }
             }
